@@ -5,24 +5,49 @@
   // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
 
+function max(num1,num2) {
+  if(num1>num2) {
+    return (num1);
+  } else {
+    return (num2);
+  }
+}
+max(5,4);
 
-
+console.assert(max(5, 4) === 5, 'error: max()');
+console.assert(max(2, 2) === 2, 'error: max()');
 
 
   // ---------------------
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
 
+  function maxOfThree(num1, num2, num3) {
+      var max = Math.max(num1, num2, num3);
+      return max;
+  }
 
-
+  maxOfThree(6,5,4);
 
 
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
 
+function isVowel(char) {
 
+  if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+    return true;
+  } else {
+    return false;
+  }
 
+}
+
+isVowel('k');
+
+console.assert(isVowel('a') === true, 'error: isVowel()');
+console.assert(isVowel('z') === false, 'error: isVowel()');
 
 
   // ---------------------
@@ -67,6 +92,6 @@
 
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
-  // --------------------- 
+  // ---------------------
 
 })();
