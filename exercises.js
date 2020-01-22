@@ -62,14 +62,26 @@ console.assert(isVowel('z') === false, 'error: isVowel()');
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
 
+  var arr = [1,2,3,4];
+  var sum = arr.reduce(function(a, b) {
+    return a + b;
+  }, 0);
 
-
+  console.log(sum)
 
 
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
 
+  function reverse(str) {
+      var newString = "";
+      for (var i = str.length - 1; i >= 0; i--) {
+          newString += str[i];
+      }
+      return newString;
+  }
+  reverse('jag testar');
 
 
 
@@ -78,7 +90,17 @@ console.assert(isVowel('z') === false, 'error: isVowel()');
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
 
-
+  function findLongestWord(str) {
+    var strSplit = str.split(' ');
+    var longest = 0;
+    for(var i = 0; i < strSplit.length; i++){
+      if(strSplit[i].length > longest){
+  	longest = strSplit[i].length;
+       }
+    }
+    return longest;
+  }
+  findLongestWord("I think i'm actually starting to understand JavaScript functions!");
 
 
 
