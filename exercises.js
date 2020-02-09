@@ -57,7 +57,7 @@ console.assert(isVowel('z') === false, 'error: isVowel()');
   // ---------------------
 //mady's answer, I couldnt figure this one out
 let rovarspraket = (str) => {
-  let consanants = 'bcdfghjklmnpqrstvwxyz'
+  let consonants = 'bcdfghjklmnpqrstvwxyz'
   let result = '';
 
   for(let i = 0; i < str.length; i++) {
@@ -80,7 +80,7 @@ console.assert(rovarspraket('this is fun') === 'tothohisos isos fofunon', 'error
     return a + b;
   }, 0);
 
-  console.log(sum)
+  console.log(sum);
 
 
   // ---------------------
@@ -130,8 +130,8 @@ console.assert(rovarspraket('this is fun') === 'tothohisos isos fofunon', 'error
   // ---------------------
 
 //test if it works
-console.assert(charFreq('abbabcbdbabdbdbabababcbcbab').a === x);
-console.assert(charFreq('abbabcbdbabdbdbabababcbcbab').b === x);
-console.assert(charFreq('abbabcbdbabdbdbabababcbcbab').c === x);
+// console.assert(charFreq('abbabcbdbabdbdbabababcbcbab').a === x);
+// console.assert(charFreq('abbabcbdbabdbdbabababcbcbab').b === x);
+// console.assert(charFreq('abbabcbdbabdbdbabababcbcbab').c === x);
 
 })();

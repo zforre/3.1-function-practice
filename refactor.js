@@ -32,7 +32,10 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
-
+let doSomethingCool = function() {
+  console.log("something Cool");
+}
+doSomethingCool();
 
 // -----------------------------------------------
 
@@ -52,8 +55,12 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
+let sayHi = function() {
+  alert("Hello, World!");
+  setTimeout(sayHi, 2000);
+}
 
-
+sayHi();
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -139,6 +146,18 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+let spanishColor = (colorName) => {
+  let colors = {
+    'rojo' : '#ff0000',
+    'blanco' : '#ffffff',
+    'azul' : '#0000ff',
+    'verde' : '#00ff00',
+    'negro' : '#000000'
+  }
+  return colors[colorName];
+};
+
+console.log(spanishColor('azul'));
 
 // -----------------------------------------------
 
@@ -156,6 +175,8 @@ var foo = "bar";
 
 // Put your answer below -------------------------
 
+  let foo;
+  foo = "bar";
 
 // -----------------------------------------------
 
@@ -206,6 +227,18 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+(function() {
+  'use strict';
+  var score = 0;
+
+  var increaseScore = function() {
+    score++;
+  };
+
+  var decreaseScore = function() {
+    score--;
+  };
+});
 
 // -----------------------------------------------
 
@@ -226,6 +259,12 @@ var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
 
+let addNumbers = (numberA, numberB) => {
+  return (numberA + numberB);
+};
+
+let twoPlusTwo = addNumbers(2,2)
+console.log(twoPlusTwo);
 
 // -----------------------------------------------
 
@@ -252,6 +291,13 @@ var accelerate = function(amount) {
 
 // Put your answer below -------------------------
 
+let speed = 0;
+
+let accelerate = function(amount) {
+  amount = (typeof amount !== 'undefined') ?  amount : 1;
+  return speed = amount;
+};
+console.log(accelerate(4));
 
 // -----------------------------------------------
 
@@ -300,3 +346,4 @@ var callLater = function(timeout, callback) {
 
 //////////////////////////////////////////////////
 })();
+
